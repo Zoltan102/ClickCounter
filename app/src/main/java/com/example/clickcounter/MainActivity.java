@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         } else if (num > 0) {
             int colour = Color.rgb(0, 255, 0);
             counter.setTextColor(colour);
-        } else if (num < 0) {
+        } else {
             int colour = Color.rgb(255, 0, 0);
             counter.setTextColor(colour);
         }
