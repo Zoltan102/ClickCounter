@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int num = Integer.parseInt(counter.getText().toString()) + 1;
-                counter.setText(num);
+                counter.setText(String.valueOf(num));
                 changeColour(num);
             }
         });
@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int num = Integer.parseInt(counter.getText().toString()) - 1;
-                counter.setText(num);
+                counter.setText(String.valueOf(num));
                 changeColour(num);
             }
         });
         counter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                counter.setText(0);
+                counter.setText(String.valueOf(0));
                 changeColour(0);
             }
         });
